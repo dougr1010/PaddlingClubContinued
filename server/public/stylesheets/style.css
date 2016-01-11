@@ -1,0 +1,234 @@
+
+
+body {
+  max-width: 960px;
+  padding: 50px;
+  font: 16px "trebuchet MS", Helvetica, Arial, sans-serif;
+  color: black;
+  background: white;
+}
+
+p {
+  padding-left: 20px;
+}
+
+.header {
+  height: 250px;
+  margin-top: 0;
+  border: 1px solid darkgray;
+  background-image: url(../images/someRiverBackgroundCropped.jpg);
+  margin-bottom: 20px;
+}
+.onBackground {
+  background-color: lightgray;
+  opacity:1;
+}
+
+.nav {
+  margin-top: 130px;
+  text-align: center;
+  color: black;
+}
+
+h1 {
+  font:44px Noteworthy, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  margin: -1px;
+}
+
+h2 {
+  font:28px Noteworthy, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #3F82BF;
+}
+
+h3 {
+  font:20px Noteworthy, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #357337;
+}
+
+.R20 {
+  padding-left: 20px;
+}
+
+h4 {
+  margin-top: 0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.nav ul li{
+  display: inline-block;
+  margin: 5px;
+}
+
+.nav ul li a {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.headerSpacer {
+  height: 40px;
+  width: 100%;
+}
+.homeColor {
+  color: darkblue;
+}
+table {
+  width: 100%;
+  background-color: #3F82BF;
+}
+
+table a {
+  color: white;
+  font-size: 13px;
+}
+
+th, td {
+  padding: 7px 10px 10px 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+th {
+  border-bottom: 1px solid black;
+  border-top: 1px solid #999;
+  text-align: left;
+}
+tr.even {
+  background-color: #efefef;
+}
+td {
+  text-align: right;
+}
+
+.docLinks, .myTripTriplist {
+  color: #00B7FF;
+
+}
+.docLinks:hover, .myTripTriplist:hover {
+  cursor: pointer;
+}
+
+.savedAs {
+  color: gray;
+  font-size: 60%;
+}
+
+.riverList>ul>li {
+  list-style-type: none;
+}
+
+.riverDescription {
+  background-color: #d1e5b4;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  border-radius: 4px;
+}
+
+body {
+  background-color: white;
+}
+
+.btnBulletin {
+  color: white;
+  background-color: #3F82BF;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+
+.btnNorm {
+  color: white;
+  background-color: #3F82BF;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.btnHome {
+  color: white;
+  background-color: #3F82BF;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.superDiv{
+  width: 100%;
+}
+.calendarDiv {
+  width: 65%;
+  float: left;
+}
+
+.calPics {
+  margin-top: 44px;
+  margin-left:10px;
+  width: 33%;
+  float: left;
+  background-color: #357337;
+  clear: none;
+}
+
+.pic {
+  margin-top:25px;
+}
+
+.bulletinList {
+  list-style-type: square;
+}
+
+.logRegList {
+  list-style: none;
+}
+
+input[type="text"] {
+  width: 100px;
+}
+
+.loginBox {
+  width: 260px;
+  margin-bottom: 5px;
+}
+
+.title {
+  float: left;
+  width: 75px;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.loginRegister {
+  margin-left: 85px;
+  width: 105px;
+  color: white;
+  background-color: #3F82BF;
+}
+
+.createTripInput {
+  float: left;
+  width: 125px;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.noBottomMargin {
+  margin-bottom:0;
+}

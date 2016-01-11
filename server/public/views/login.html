@@ -1,0 +1,36 @@
+<div class="container">
+
+    <div class="row">
+        <div class="text-center">
+            <h2>Log In</h2>
+        </div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+
+            <form ng-submit="logIn()">
+
+                <div class="form-group">
+                    <div>
+                        <label for="username" class="control-label">Username:</label>
+                        <input ng-model="username" class="form-control" type="text" name="username" id="username"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div>
+                        <label for="password" class="control-label">Password:</label>
+                        <input ng-model="password" class="form-control" type="text" name="password" id="password"/>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="submit" value="Log In"/>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>

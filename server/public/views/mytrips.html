@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <h2>{{loggedInAs}}'s Trips</h2>
+            <p>(click on trip name to view trip information)</p>
+
+            <div class="myTripList">
+                <ul>
+                    <li ng-repeat="trip in tripsImTaking track by $index">
+                        <div class="myTripTriplist" ng-click="showTripInfo()">
+                            {{trip[0]}}<br /><br />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+            <div ng-hide="noTripsSelected">
+                <div class="well">
+
+                    <h3>{{trip.date}} - {{trip.trip}}</h3><br /><br />
+                    <h3>Trip Leader: {{trip.leader}} - Trip Difficulty: ({{trip.difficulty}})</h3><br /><br />
+                    {{trip.description}}<br /><br />
+
+                    <h3 class="bottomMargin">Trip Information: </h3>
+                        <ul>
+                            <li ng-repeat="attachment in trip.attachments track by $index">
+                                <div class="docLinks" ng-click="openAttachment()">
+                                    {{attachment[0]}}<span class="savedAs"> ... saved as ... </span>{{attachment[1]}}<br /><br />
+                                </div>
+                            </li>
+                        </ul>
+
+                    (PDFs will open in a browser window when possible, other files will be sent to your downloads folder.)<br /><br />
+
+
+                    <h3 class="bottomMargin">>Map to Put-In:</h3> <a href="{{trip.putInMap}}" target="_blank">{{trip.putInMap}}</a><br /><br />
+
+                    <h3 class="bottomMargin">>Map of Shuttle Route:</h3> <a href="{{trip.shuttleMap}}" target="_blank">{{trip.shuttleMap}}</a><br /><br />
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

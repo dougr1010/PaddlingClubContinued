@@ -1,0 +1,29 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>Rivers and Trip Descriptions</h2>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 riverList">
+            <ul>
+                <li ng-repeat="river in rivers | orderBy:'dateMs'">
+                    <div>
+                        <a id="{{river.linkId}}"></a>
+                        <h3>{{river.date}} - {{river.trip}}</h3>
+                        <h4>Trip Leader: {{river.leader}}<br />
+                        Trip Rating: {{river.difficulty}}</h4>
+                        <p class="riverDescription">{{river.description}}</p>
+                        <button class="btn btnNorm" ng-click="reqInfo()">Request Information</button>
+                        <br /><br />
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

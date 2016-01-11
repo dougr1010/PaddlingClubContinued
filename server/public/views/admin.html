@@ -1,0 +1,73 @@
+<div class="container">
+
+    <div class="row">
+        <div class="text-center">
+            <h2>Admin Page</h2>
+            <br />
+            <h3>Create a new trip</h3>
+            <br />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <form ng-submit="submitTrip()">
+
+                <div class="form-group">
+                    <div>
+                        <label for="id" class="control-label">Trip ID</label>
+                        <input ng-model="id" class="form-control" type="number" name="id" id="id"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div>
+                        <label for="linkId" class="control-label">Link ID</label>
+                        <input ng-model="linkId" class="form-control" type="text" name="linkId" id="linkId"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div>
+                        <label for="trip" class="control-label">Trip Name</label>
+                        <input ng-model="trip" class="form-control" type="text" name="trip" id="trip"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div>
+                        <label for="dateInput" class="control-label">Trip Date</label>
+                        <input ng-model="dateInput" class="form-control" type="date" name="dateInput" id="dateInput"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div>
+                        <label for="difficulty" class="control-label">Trip Difficulty</label>
+                        <input ng-model="difficulty" class="form-control" type="text" name="difficulty" id="difficulty"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div>
+                        <label for="description" class="control-label">Trip Description</label>
+                        <input ng-model="description" class="form-control" type="text" name="description" id="description"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div>
+                        <label for="leader" class="control-label">Trip Leader</label>
+                        <input ng-model="leader" class="form-control" type="text" name="leader" id="leader"/>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="submit" value="Submit Trip">
+                    <!--button class="loginRegister" ng-click="submitTrip()">Submit Trip</button-->
+                </div>
+            </form>
+        </div>
+    </div>
+    <br>
+</div>

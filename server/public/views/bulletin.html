@@ -1,0 +1,43 @@
+<div class="container">
+
+    <div class="row">
+        <div class="text-center">
+            <h2>The UpNorth Bulletin Board</h2>
+        </div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="messageList col-sm-8 col-sm-offset-2">
+            <ul>
+                <li class="bulletinList" ng-repeat="message in messages | orderBy: message.dateMs track by $index">
+                    <div>
+                        {{message.date}} - {{message.username}} <br /> {{message.content}}<br />
+                        <br />
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+
+            <form ng-submit="SubmitMessage()">
+
+                <div class="form-group">
+                    <div>
+                        <label for="message" class="control-label">What's on your mind?</label>
+                        <input ng-model="messageContent" class='form-control' name="message" id="message" type="text">
+                    </div>
+                </div>
+
+                <div>
+                    <input type="submit" value="Submit Message">
+                </div>
+            </form>
+        </div>
+    </div>
+    <br>
+
+</div>

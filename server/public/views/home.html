@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Welcome!</h2>
+
+            <p>Welcome to the UpNorth Paddlers club.  We are an organization of paddlers who enjoy getting together to explore
+                and paddle the many rivers in the Minnesota, Wisconsin and Northern Iowa.  We have trips on both flat water and
+                whitewater throughout the Spring, Summer, and Fall.  Take a look at the calendar, explore the trip descriptions,
+                and <em>come paddle with us!</em></p>
+
+
+            <h2>Our Next Trip</h2>
+            <h3 class="R20">{{nextTripTitle}} on {{nextTripDate}}</h3>
+            <p class="noBottomMargin">{{nextTrip}}</p>
+            <button class="btnHome" ng-click="reqInfo()">Request Information</button>
+
+            <h2>Club Messages</h2>
+            <p>{{homeMessage}}</p>
+            <br />
+
+            <p ng-show="showMessageEdit">You can edit Club Messages here:</p>
+            <textarea ng-show="showMessageEdit" id="homeMessageBox" ng-model="messageEditBox" cols='100' rows='4'
+                      placeholder='If you want, you can copy and paste the current message text here to start.'>
+            </textarea>
+
+            <br />
+            <button ng-show="showMessageEdit" ng-click="saveMessage()">Save</button>
+        </div>
+    </div>
+    <br>
+</div>

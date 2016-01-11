@@ -1,0 +1,103 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-12">
+            <h2>TripLeader Page</h2><br />
+        </div>
+
+        <div class="col-sm-10 col-sm-offset-1">
+            <div class="well">
+                <h3>{{date}}</h3><br />
+                <h3>{{trip}}</h3><br />
+                <p>{{description}}</p><br />
+
+                <form ng-submit="saveTripDescriptionEdits()">
+                    <div class="form-group">
+                        <label for="edTripDisc" class="control-label">You can edit the trip description here:</label>>
+                        <textarea type="text" class="form-control" ng-model="editedTripDescription" id="edTripDisc" cols='100' rows='4' placeholder='If you want, you can copy and past the description text here to start.'></textarea>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Save Edits"/>
+                    </div>
+                </form>
+                <br /><br />
+
+
+                <h3> Saved Trip Documents</h3>
+
+
+                <ul>
+                    <li ng-repeat="attachment in attachments track by $index">
+                        <div id="tlListItems">
+                            {{attachment[0]}}<span class="savedAs"> ... saved as ... </span>{{attachment[1]}}
+                        </div>
+                    </li>
+                </ul>
+
+
+                <h3>Add Trip Documents</h3>
+                <br />
+
+                <form method="POST" enctype="multipart/form-data" class="contact-form">
+
+                    <input type="file" ng-model="file" ngf-select="" ng-model="picFile" name="file" accept="" required="" class="ng-pristine ng-invalid ng-invalid-required"/>
+                    <br>
+                    <input ng-click="addAttachment()" type="submit">
+                </form>
+                <br />
+
+
+                <h3>Trip Information Requests</h3>
+
+                <ul>
+                    <li style="list-style-type:none" ng-repeat="attendee in attending track by $index">
+                        <div id="row">
+                            <div class="col-sm-2 text-left">
+                                {{attendee.username}}
+                            </div>
+                            <div class="col-sm-2">
+                                {{attendee.sent}}
+                            </div>
+                            <div class="col-sm-8">
+                                <div ng-hide="attendee.sent=='sent'">
+                                    <!-- ng-click="sendInfo()">Send</button-->
+                                    <input ng-click="addAttachmentsendInfo()" type="submit" value="Send">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </li>
+                </ul>
+                <br />
+
+
+                <h3>Map to Put-In</h3>
+                <form ng-submit="savePutInMap()">
+                    <a href="{{putInMap}}" target="_blank">Your Put-In map link</a>
+                    <div>
+                        <label for="putInMapString" class="control-label">Copy and paste the Google Maps URL for the Put-In location here:</label>
+                        <input type="text" ng-model="putInMapString" class="form-control" name="putInMapString" id="putInMapString"/>
+                    </div>
+                    <div>
+                        <input type="submit" value="Save Map"/>
+                    </div>
+                </form>
+                <br />
+
+
+                <h3>Map of Shuttle Route</h3>
+                <form ng-submit="saveShuttleMap()"></form>
+                    <a href="{{shuttleMap}}" target="_blank">Your Shuttle map link</a>
+                    <div>
+                        <label for="shuttleMapString" class="control-label">Copy and paste the Google Maps URL for the Shuttle Route here:</label>
+                        <input type="text" ng-model="shuttleMapString" class="form-control" name="shuttleMapString" id="shuttleMapString"/>
+                    </div>
+                    <div>
+                        <input type="submit" value="Save Map"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

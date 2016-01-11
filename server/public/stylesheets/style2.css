@@ -1,0 +1,78 @@
+body {
+    padding-top: 40px;
+}
+
+.riverPic {
+    width: 100%
+}
+
+h1 {
+    font: 40px Noteworthy, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -100px;
+    margin-bottom: 100px;
+}
+h2 {
+    font:28px Noteworthy, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #3F82BF;
+}
+h3 {
+    font:20px Noteworthy, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #357337;
+}
+
+@media (min-width: 768px){
+    .navbar-nav {
+        margin: 0 auto;
+        display: table;
+        table-layout: auto;
+        float: none;
+        width: 100%;
+    }
+    .navbar-nav>li {
+        display: table-cell;
+        float: none;
+        text-align: center;
+    }
+}
+@media (max-width: 400px){
+    h1 {
+        font: 32px Noteworthy, Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+}
+
+.calMonthCol {
+}
+.calPicCol {
+}
+.pic {
+    vertical-align: middle;
+    width: 100%
+}
+
+td {
+    float: none;
+}
+
+.calDate {
+    float: right;
+}
+
+a, .myTripList, .docLinks {
+    color: #00B7FF;
+    text-decoration: underline;
+}
+a:hover, .myTripList:hover, .docLinks:hover {
+    cursor: pointer;
+}
